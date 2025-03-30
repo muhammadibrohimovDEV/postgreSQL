@@ -17,3 +17,11 @@ SELECT * FROM my_contacts WHERE profession = 'doctor' OR birthdate > '2000-01-01
 --  Tom         | McKeen    | 1994-10-12 | doctor         | dota, cs
 
 
+-- AND
+
+SELECT * FROM my_contacts WHERE profession = 'doctor' and birthdate < '2000-01-01';
+
+--  first_name | last_name | birthdate  | profession | interests 
+-- ------------+-----------+------------+------------+-----------
+--  Tom        | McKeen    | 1994-10-12 | doctor     | dota, cs
+
