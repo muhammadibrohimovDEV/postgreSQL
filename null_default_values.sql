@@ -29,7 +29,7 @@ price NUMERIC(3,2) DEFAULT 1.00
 );
 
 -- NULL qiymatli o'zgaruvchi kirgzish xato
--- INSERT INTO doughnouts_list (name , price) VALUES('apple' , 3.00);
+INSERT INTO doughnouts_list (name , price) VALUES('apple' , 3.00);
 
 ERROR:  null value in column "type" of relation "doughnouts_list" violates not-null constraint
 DETAIL:  Failing row contains (apple, null, 3.00).
