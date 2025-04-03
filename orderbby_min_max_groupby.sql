@@ -68,4 +68,22 @@ SELECT type , MAX(price) FROM doughnouts_list GROUP BY type;
 --  sweet        | 7.70
 --  single toned | 1.00
 
+DISTINCT
 
+SELECT DISTINCT(name) FROM doughnouts_list;
+--  name
+-- -------
+--  peach
+--  mazza
+--  lemon
+--  karam
+--  qovoq
+--  apple
+
+LIMIT 
+
+SELECT * FROM doughnouts_list ORDER BY price DESC LIMIT 2;
+--  name  |  type  | price
+-- -------+--------+-------
+--  peach | creamy |  9.90
+--  lemon | creamy |  8.80
